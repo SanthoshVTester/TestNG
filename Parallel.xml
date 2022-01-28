@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test" thread-count="2" parallel="classes">
+   <parameter name="username" value="Santhosh"/>
+  <parameter name="password" value="santhosh@123"></parameter>
+  <groups>
+  <run>
+   <exclude name="buyNow"></exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.amazon.stepdefinition.MobileSearch"/>
+      <class name="com.amazon.stepdefinition.TVPurchase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
